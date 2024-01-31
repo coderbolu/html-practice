@@ -1,0 +1,45 @@
+body {
+    background-color: #bf8df0;
+   font-size: 18px;
+   margin: 0;
+}
+
+header {
+    background-color:#5e3982;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+} 
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+float: left;
+width: 60%;
+margin-bottom: 100px;
+}
+
+aside {
+float: right;
+width: 30%;
+}
+
+footer {
+    background-color:#843cc9;
+    padding: 50px 0;
+    text-align: center;
+    clear: both;
+}
+/*firefox is best at viewing css because of inspection. It gives better details than google chrome. 
+One can know the font details and also adjust font settings from the inspection bar.
+It lets one know when there is an error in the code and also identify what code isn't working.
+The style editor helps you edit your css language thats written, but you have to always save.
+The accessibilty helps you see how things are broken up in your editor, it helps flag issues on the websbite. 
+It is a really nice way to run an accessibity audit on yor website.
+Turn off accessibility feature because it affects the performance of other developer tools.*/
