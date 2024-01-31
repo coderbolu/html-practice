@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+    color:#9370DB;
+    font-size: 1.125rem;
+
+}
+
+h1{
+    color: indianred;
+}
+p{
+  font-size: 1.0rem;
+}
+
+em{
+    font-weight: bolder;
+}
+
+div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: dimgrey;
+}
+
+span {
+    color: brown;
+    font-size: 1rem;
+    font-style: oblique;
+}

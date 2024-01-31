@@ -1,0 +1,197 @@
+body {  
+background-color: white; 
+color: blue; 
+font-family: initial;
+font-size: 20px;
+}
+
+/*font stack is the usage of more than one font so that the computer can default to the other font if one them is not working.
+    don't use just any font, you have to be sure all computers have the font you choose to use so that they can see what is on your website.
+        Whatever the font size is, is the space in between the texts. The spaces on the text are created with margin top and bottom, all text have margin top and margin bottom by default.
+        The line height default is the same measurement as the font size, i.e the size of the font
+        It is better to use 'rem' nowadays instead of 'px' because it's user friendly and its flexible. 'rem' unit is the industry standard.*/
+h1 {
+    font-family: Georgia;
+    color: indianred;
+    font-size: 50px;
+    text-transform: capitalize;
+
+    margin-bottom: 0px;
+}
+
+h2{
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    color:#9370DB;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
+    line-height: 1.5;
+    
+    clear: both
+}
+
+h4{
+    color: dimgray;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+/*we can differentiate DIVS and paragraphs or any tags we have a lot of. It helps separate things. Another thing that can be used to differentiate tags is "id". An ID is very similar to class. The only difference is that it is more specific, and you can only have one "ID tag" per page, that is, you can not have a specific ID*/
+
+span {
+font-family:'Times New Roman', Times, serif;
+font-style: italic;
+font-weight: bold;
+text-decoration: underline; 
+}
+
+.top-section {
+    background-color:pink ;
+}
+
+.bottom-section{
+    background-color: darkgreen;
+}
+
+/*this is how to commengt on css.
+this is the css box model.
+three different parts of css box model:
+Margin: it is used to move the text or paragragh in the box. It is the empty space around the element.
+It creates invisible space all around the box that nothing can go in. 
+It pushes things away and there are various subs that margin can be used for its effect; top, bottom, etc.
+
+Padding:it is usually mixed up with margin. they are similar. It is empty space WITH background around my element.
+Padding creates empty space with the background colour within the box, so it gives more background space, while margin creates space without the background colour. 
+The problem with padding is, if you don't have background colour, you don't see the difference. It can also be adjusted on all sizes.
+While writing the shorthand for padding, it goes; top, right, bottom, left. When you use one px, it goes on all four sides.
+
+Border:it is the stroke or border around the element, this has three different properties;
+-the colour
+-the style
+-the width
+*the three properties can be written together for shorthand.
+The order in which codes are written matters, the one written below overrides the one above if they happen to give the same order.
+It is the continuation of the cascade and the way the cascade works is that, it reads through the code in order it is written, that is, the last defined rules.
+Cascade works as long as that thing doesn't have a style on i.
+All of these add with the total size of the box with the width plus height plus margin, plus border, plus paddling. it goes in the order of; box, paddling, border and margin */
+
+/*adding image to background
+use 'url ../img/..' to add image and also take the link back 2 paces because the image is nor in the css folder but general folder, that is url(../img/...)
+use padding to fit the image correctly. padding gives more backgroud.
+background in box model or css in general is for the beautification of the website
+use background-repeat to clean up edges or excess background
+if you want text on top of an image, it has to be a background image.*/
+
+    background-size: cover;
+    background-position: center; 
+/* background position is for emphasis on where you want to be more obvious*/
+
+/*styling links and pseudo classes
+The 'a' tags are used to style links
+A pseudo class selcts the elements in different states of being. 
+Any property can be altered in the pseudo class, the changes made are only visible when the cursor is on the link.
+-we have the different pseudo class and they have to be in this order:
+*Default Link style: used to change properties of the link. 
+*Visited style: helps differentiate link that has been visited.
+*Hover style: the link changes colour to the one set for 'hover' when the cursor comes on it.
+*Active style: helps differentiate link that can be clicked on.
+*Focus style: it works by pushing the tab botton on the keyboard, it is a lot like hover.
+Multiple selectors can have the same property, all you have to do is to type them out and just use comma to separate them.*/
+
+
+a:focus{
+    color: red;
+}
+
+.body-text {
+    background-color: #704e4b;
+    padding: 50px;
+}
+
+.body-text p {
+    color: #79acd1;
+
+}
+
+.body-text a {
+    color: white ;
+}
+.body-text a:hover {
+    color: aliceblue;
+}
+
+.important-link,
+.body-text .important-link {
+    color: orange;
+    /*it is important not to abuse our important. it can be shortwritten as 'color:... and then important'. 
+    I have not gotten the shortform yet, when I tried it, it did not work.
+    specificity calculator helps us know how specific our css is.*/
+}
+ol {
+    list-style-type: decimal ; /* this is used to change the list style, both 'ol' and 'ul' can be styled.*/
+    background-color: black;
+    padding: 50px;
+    font-size: 20px;
+}
+
+ol li {
+    background-color: pink;
+    margin-bottom: 10px;
+}
+
+ul {
+    background-color: red;
+    padding: 30px;
+    font-size: 20px;
+}
+
+ul li {
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+.red-box {
+    width: 500px;
+    background-color: rgba(255,150,0,.5);
+   
+}
+
+.blue-box {
+    width: 500px;
+    background-color: darkblue;
+    color: white;
+}
+
+img {
+    float: none;
+     /* float helps move write ups around images, either left or right. Float and clear are two properties that woork together.
+     float changes how the elements are working.
+     Clear is used to remove any element that floats, it forces a new line. clear 'both' is mostly used, clear left is used to force elements into a new line.*/
+    margin-right: 20px;
+}
+
+    /*Hex, RGB, & HSL;
+        The use of hexidecimal is using hashtag '#' then writing the first letter of each colour twice, i.e use of numbers and letters to represent colours. 
+        When there is a lot of zeros, the colour will be dark, when there is a lot of fs, the colour will be bright, i.e '000000 is black' and 'ffffff is white'. 
+        NOTE: hexidecimal is a scale of A-> F i.e 0-> 9, F and 9 being the brightest, A and 0 being the darkest. E.g #RRGGBB -> #FF0000, it is written in doubles.
+        The RGBa scale is from 0-> 255, the 'a' stands foe 'alpha' which is pretty much trasparency, the alpha value is from 0-> 1. It is written just once and with commas. For example; RGB -> 255, 0, 0.
+        HSL works like RGB, it has three values; 'Hue, Saturation and Lightness'. Hue value is 0-> 360 more like a 'wheel'. Saturation is in percentage, while Lightness is also in percentage. 
+        The HSL can used to manipulate just one colour. For example: hsl(360, 100%, 50%).
+        The values of rgba and hsl must be written inside a bracket and separated with comma unlike hex
+        0% saturation gives 'grey'. the lower the percentage of the saturation, the closer to grey. While the higher the percentage of lightness, the brighter and the lower the percentage the darker.*/
+
+.lesson {
+    background-color:green;
+    width: 60%; /* percentage can be used instead of pixels, which in its case is flexible to the movement of the page but just to the stipulated percentage used. */
+    max-width: 1000px; /*it adjusts with the page as it moves till it hit the stipulated width, it shrinks and grows and then sstops when it gets to the inputed percentage.*/
+    margin-left: auto;
+    margin-right: auto; 
+    /*this enable the div stay in the middle of the page when the browser page is being adjusted, it makes the margin left and right exactly the same, it can also be written as 'margin: 0 auto'. It can not be used for margin top and bottom*/
+   
+}
+
